@@ -85,9 +85,6 @@ This project utilized the following AI tools for development:
 
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes. Follow the coding style and ensure your changes are well-documented.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Repository
 
