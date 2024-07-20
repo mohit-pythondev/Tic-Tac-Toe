@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Tic-Tac-Toe</h1>
+        <div class="text-center">
+            <h4>Welcome, {{ username }}</h4>
+            <h5>Wins: <span id="winCount">{{ wins }}</span></h5>
+            <button id="logoutButton" class="btn btn-primary">Logout</button>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div id="gameBoard">
+                    <!-- Game cells will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
