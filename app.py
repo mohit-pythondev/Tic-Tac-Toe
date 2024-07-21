@@ -12,7 +12,7 @@ mongo = PyMongo(app)
 def index():
     if 'username' in session:
         user = mongo.db.users.find_one({'username': session['username']})
-        return render_template('index.html', username=session['username'], wins=user.get('wins', 0))
+        return render_template('index.html', username=session['username'], wins=user.get('wins', 0), opponent_wins=user.get('opponent_wins', 0))
     return redirect(url_for('login'))
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -22,7 +22,7 @@ def register():
         password = generate_password_hash(request.form['password'])
         if mongo.db.users.find_one({'username': username}):
             return 'Username already exists!'
-        mongo.db.users.insert_one({'username': username, 'password': password, 'wins': 0})
+        mongo.db.users.insert_one({'username': username, 'password': password, 'wins': 0, 'opponent_wins': 0})
         session['username'] = username
         return redirect(url_for('index'))
     return render_template('register.html')
@@ -36,7 +36,7 @@ def login():
         if user and check_password_hash(user['password'], password):
             session['username'] = username
             return redirect(url_for('index'))
-        return jsonify({'error': 'Invalid username or password!'}), 400  # Return error with status code
+        return jsonify({'error': 'Invalid username or password!'}), 400
     return render_template('login.html')
 
 @app.route('/logout')
@@ -48,9 +48,27 @@ def logout():
 def update_wins():
     user = mongo.db.users.find_one({'username': session['username']})
     if user:
-        mongo.db.users.update_one({'username': session['username']}, {'$inc': {'wins': 1}})
+        data = request.get_json()
+        winner = data.get('winner')
+        if winner == 'X':
+            mongo.db.users.update_one({'username': session['username']}, {'$inc': {'wins': 1}})
+        if winner == 'O':
+            mongo.db.users.update_one({'username': session['username']}, {'$inc': {'opponent_wins': 1}})
         user = mongo.db.users.find_one({'username': session['username']})
-        return jsonify({'wins': user.get('wins', 0)})
+        return jsonify({
+            'wins': user.get('wins', 0),
+            'opponent_wins': user.get('opponent_wins', 0)
+        })
+    return jsonify({'error': 'User not found'}), 404
+
+@app.route('/get_initial_wins', methods=['GET'])
+def get_initial_wins():
+    user = mongo.db.users.find_one({'username': session['username']})
+    if user:
+        return jsonify({
+            'wins': user.get('wins', 0),
+            'opponent_wins': user.get('opponent_wins', 0)
+        })
     return jsonify({'error': 'User not found'}), 404
 
 if __name__ == '__main__':
