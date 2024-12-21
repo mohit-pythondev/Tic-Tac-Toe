@@ -34,7 +34,7 @@ commit_messages = [
 os.chdir(REPO_PATH)
 
 # Write the current date and time to daily_commit.txt
-with open(FILE_PATH, "a") as file:
+with open(FILE_PATH, "w") as file:
     file.write(f"{random.choice(commit_messages)}\n")
 
 # Git commands to add, commit, and push
