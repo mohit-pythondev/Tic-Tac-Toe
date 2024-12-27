@@ -1,1 +1,1 @@
-Improved error handling
+Cleaned up unused code
