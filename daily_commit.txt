@@ -1,1 +1,1 @@
-Improved code readability
+Improved user interface
