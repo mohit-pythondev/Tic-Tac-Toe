@@ -1,1 +1,1 @@
-Improved user interface
+Fixed alignment issues
