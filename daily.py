@@ -40,7 +40,7 @@ with open(FILE_PATH, "w") as file:
 # Git commands to add, commit, and push
 try:
     subprocess.run(["git", "add", "."], check=True)  # Stage all changes
-    subprocess.run(["git", "commit", "-m", f"Auto commit on {datetime.now().date()}"], check=True)
+    subprocess.run(["git", "commit", "-m", f"{random.choice(commit_messages)}"], check=True)
     subprocess.run(["git", "push"], check=True)  # Push to the remote repository
     print("Commit and push successful!")
 except subprocess.CalledProcessError as e:
