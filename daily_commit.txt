@@ -1,1 +1,1 @@
-Cleaned up unused code
+Added logging functionality
