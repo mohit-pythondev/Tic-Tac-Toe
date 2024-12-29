@@ -1,1 +1,1 @@
-Improved responsiveness on smaller screens
+Added test cases for new features
