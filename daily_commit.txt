@@ -1,1 +1,1 @@
-Fixed typos in comments
+Added logging functionality
