@@ -1,1 +1,1 @@
-Improved code readability
+Fixed typos in comments
