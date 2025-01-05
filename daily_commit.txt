@@ -1,1 +1,1 @@
-Upgraded dependencies
+Added support for new platforms
