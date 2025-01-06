@@ -1,1 +1,1 @@
-Added test cases for new features
+Added support for new platforms
