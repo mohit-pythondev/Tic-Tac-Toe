@@ -1,1 +1,1 @@
-Added support for new platforms
+Simplified logic in game flow
