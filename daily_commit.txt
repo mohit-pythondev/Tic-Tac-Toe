@@ -1,1 +1,1 @@
-Optimized database queries
+Simplified logic in game flow
