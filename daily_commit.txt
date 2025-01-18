@@ -1,1 +1,1 @@
-Upgraded dependencies
+Fixed alignment issues
