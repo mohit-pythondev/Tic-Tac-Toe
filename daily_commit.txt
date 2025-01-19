@@ -1,1 +1,1 @@
-Fixed typos in comments
+Fixed minor bugs
