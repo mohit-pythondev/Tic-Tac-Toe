@@ -1,1 +1,1 @@
-Added logging functionality
+Improved responsiveness on smaller screens
