@@ -1,1 +1,1 @@
-Updated documentation
+Improved error handling
