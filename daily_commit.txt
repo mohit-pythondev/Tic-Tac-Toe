@@ -1,1 +1,1 @@
-Added support for new platforms
+Refactored code for better performance
