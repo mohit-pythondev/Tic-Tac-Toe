@@ -1,1 +1,1 @@
-Fixed typos in comments
+Added support for new platforms
