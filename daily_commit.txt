@@ -1,1 +1,1 @@
-Upgraded dependencies
+Improved user interface
