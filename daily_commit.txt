@@ -1,1 +1,1 @@
-Improved user interface
+Added test cases for new features
