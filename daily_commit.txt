@@ -1,1 +1,1 @@
-Improved responsiveness on smaller screens
+Fixed typos in comments
