@@ -1,1 +1,1 @@
-Simplified logic in game flow
+Upgraded dependencies
