@@ -1,1 +1,1 @@
-Fixed minor bugs
+Added test cases for new features
