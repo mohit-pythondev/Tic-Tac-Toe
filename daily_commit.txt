@@ -1,1 +1,1 @@
-Improved error handling
+Fixed minor bugs
