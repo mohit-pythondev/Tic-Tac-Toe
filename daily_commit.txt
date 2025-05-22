@@ -1,1 +1,1 @@
-Improved code readability
+Updated documentation
