@@ -1,1 +1,1 @@
-Updated documentation
+Simplified logic in game flow
