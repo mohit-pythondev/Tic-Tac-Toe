@@ -1,1 +1,1 @@
-Improved user interface
+Cleaned up unused code
