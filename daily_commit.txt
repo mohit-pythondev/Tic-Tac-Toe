@@ -1,1 +1,1 @@
-Improved responsiveness on smaller screens
+Added new feature to Tic-Tac-Toe
