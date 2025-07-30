@@ -1,1 +1,1 @@
-Fixed alignment issues
+Added test cases for new features
