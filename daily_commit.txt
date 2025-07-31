@@ -1,1 +1,1 @@
-Added support for new platforms
+Fixed alignment issues
