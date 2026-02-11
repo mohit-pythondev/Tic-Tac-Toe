@@ -1,1 +1,1 @@
-Updated documentation
+Improved responsiveness on smaller screens
