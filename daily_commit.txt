@@ -1,1 +1,1 @@
-Improved code readability
+Added new feature to Tic-Tac-Toe
