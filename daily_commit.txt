@@ -1,1 +1,1 @@
-Added new feature to Tic-Tac-Toe
+Simplified logic in game flow
