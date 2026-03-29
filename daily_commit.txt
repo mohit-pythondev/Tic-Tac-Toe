@@ -1,1 +1,1 @@
-Improved code readability
+Cleaned up unused code
