@@ -1,1 +1,1 @@
-Fixed typos in comments
+Added new feature to Tic-Tac-Toe
